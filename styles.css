@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: greenyellow;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    background-image: url("https://unsplash.it/400");
+    padding: 10rem 0 0;
+    max-width: 180px;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-left: 100px;
+    margin-top: 90px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-content {
+    padding: 10px;
+    background: linear-gradient(black, rgba(0,0,0,0.5));
+    transform: translateY(89%);
+}
+.card:hover .card-content {
+    transform: translateY(0%);
+}
+
+.card-content__title {
+    color: white;
+}
+.card-content__body {
+    color: white;
+}
+.card-content__bottom {
+    font-size: large;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 0.50rem;
+}
+
+.card-content__bottom:hover {
+    background-color: white;
+    color: black;
+}
+/* Buton */
+.buttom {
+    text-decoration: none;
+    position: absolute;
+    border: 1px solid black;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 10px;
+    top: 50%;
+    right: 10%;
+    overflow: hidden;
+}
+.buttom::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: darkblue;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    z-index: -1;
+}
+.buttom:hover::before {
+    transform: rotate(0deg);
+}
+.buttom:hover {
+    color: white ;
+}
+
